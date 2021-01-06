@@ -1,0 +1,13 @@
+{
+  "name": "Clean Architecture Golang",
+  "image": "bhongy/vscode-remote-devcontainer.go",
+  "settings": { 
+		"terminal.integrated.shell.linux": "/bin/zsh",
+		"go.gopath": "/go",
+    "go.useLanguageServer": true
+  },
+  "extensions": [
+    "golang.go",
+    "editorconfig.editorconfig",
+  ]
+}
