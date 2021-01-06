@@ -56,7 +56,7 @@ func (r *mongoRepository) Find(code string) (*shortener.Redirect, error) {
 	err := collection.FindOne(ctx, filter).Decode(&redirect)
 	if err != nil {
 		if err == mongo.ErrNoDocuments {
-			return nil, fmt.Errorf("repository.Redirect.Find: %v", shortener.ErrRedirectNotFound)
+			return nil, fmt.Errorf("repository.Redirect.Find: %w", shortener.ErrRedirectNotFound)
 		}
 		return nil, fmt.Errorf("repository.Redirect.Find: %v", err)
 	}

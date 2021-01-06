@@ -28,7 +28,7 @@ func (r *redirectService) Find(code string) (*Redirect, error) {
 
 func (r *redirectService) Store(redirect *Redirect) error {
 	if err := validate.Validate(redirect); err != nil {
-		return fmt.Errorf("service.Redirect.Store: %v", ErrRedirectInvalid)
+		return fmt.Errorf("service.Redirect.Store: %w", ErrRedirectInvalid)
 	}
 	redirect.Code = shortid.MustGenerate()
 	redirect.CreatedAt = time.Now()

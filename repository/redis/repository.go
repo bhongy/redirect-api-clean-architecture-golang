@@ -48,7 +48,7 @@ func (r *redisRepository) Find(code string) (*shortener.Redirect, error) {
 	}
 
 	if len(data) == 0 {
-		return nil, fmt.Errorf("repository.Redirect.Find: %v", shortener.ErrRedirectNotFound)
+		return nil, fmt.Errorf("repository.Redirect.Find: %w", shortener.ErrRedirectNotFound)
 	}
 
 	createdAt, err := time.Parse(TimeFormat, data["created_at"])
