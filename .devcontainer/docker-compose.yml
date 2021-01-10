@@ -1,0 +1,20 @@
+version: "3"
+services:
+  api:
+    image: bhongy/vscode-remote-devcontainer.go
+    environment:
+      - PORT=8000
+      - URL_DB=redis
+      - REDIS_URL=redis://redis-db
+    volumes:
+      - ..:/workspaces/tmp-clean-arch-golang:delegated
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    depends_on:
+      - redis-db
+  redis-db:
+    image: redis:6.0-alpine
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:

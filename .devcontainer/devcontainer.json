@@ -1,6 +1,8 @@
 {
   "name": "Clean Architecture Golang",
-  "image": "bhongy/vscode-remote-devcontainer.go",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "api",
+  "workspaceFolder": "/workspaces/tmp-clean-arch-golang",
   "settings": { 
 		"terminal.integrated.shell.linux": "/bin/zsh",
 		"go.gopath": "/go",
@@ -9,5 +11,6 @@
   "extensions": [
     "golang.go",
     "editorconfig.editorconfig",
-  ]
+  ],
+  "forwardPorts": [8000]
 }
