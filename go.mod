@@ -1,4 +1,4 @@
-module github.com/bhongy/tmp-clean-arch-golang
+module github.com/bhongy/rediret-api-clean-architecture-golang
 
 go 1.13
 

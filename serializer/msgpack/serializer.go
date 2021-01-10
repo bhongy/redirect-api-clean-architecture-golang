@@ -3,7 +3,7 @@ package msgpack
 import (
 	"fmt"
 
-	"github.com/bhongy/tmp-clean-arch-golang/shortener"
+	"github.com/bhongy/rediret-api-clean-architecture-golang/shortener"
 	"github.com/vmihailenco/msgpack"
 )
 

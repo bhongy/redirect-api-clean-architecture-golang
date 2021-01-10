@@ -9,10 +9,10 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/bhongy/tmp-clean-arch-golang/api"
-	mr "github.com/bhongy/tmp-clean-arch-golang/repository/mongodb"
-	rr "github.com/bhongy/tmp-clean-arch-golang/repository/redis"
-	"github.com/bhongy/tmp-clean-arch-golang/shortener"
+	"github.com/bhongy/rediret-api-clean-architecture-golang/api"
+	mr "github.com/bhongy/rediret-api-clean-architecture-golang/repository/mongodb"
+	rr "github.com/bhongy/rediret-api-clean-architecture-golang/repository/redis"
+	"github.com/bhongy/rediret-api-clean-architecture-golang/shortener"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 )

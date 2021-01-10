@@ -5,9 +5,9 @@ import (
 	"log"
 	"net/http"
 
-	jsonSerializer "github.com/bhongy/tmp-clean-arch-golang/serializer/json"
-	msgpackSerializer "github.com/bhongy/tmp-clean-arch-golang/serializer/msgpack"
-	"github.com/bhongy/tmp-clean-arch-golang/shortener"
+	jsonSerializer "github.com/bhongy/rediret-api-clean-architecture-golang/serializer/json"
+	msgpackSerializer "github.com/bhongy/rediret-api-clean-architecture-golang/serializer/msgpack"
+	"github.com/bhongy/rediret-api-clean-architecture-golang/shortener"
 	"github.com/go-chi/chi"
 	"github.com/pkg/errors"
 )

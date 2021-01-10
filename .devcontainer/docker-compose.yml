@@ -7,7 +7,7 @@ services:
       - URL_DB=redis
       - REDIS_URL=redis://redis-db
     volumes:
-      - ..:/workspaces/tmp-clean-arch-golang:delegated
+      - ..:/workspaces/redirect-api-clean-architecture-golang:delegated
     command: /bin/sh -c "while sleep 1000; do :; done"
     depends_on:
       - redis-db

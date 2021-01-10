@@ -2,7 +2,7 @@
   "name": "Clean Architecture Golang",
   "dockerComposeFile": "docker-compose.yml",
   "service": "api",
-  "workspaceFolder": "/workspaces/tmp-clean-arch-golang",
+  "workspaceFolder": "/workspaces/redirect-api-clean-architecture-golang",
   "settings": { 
 		"terminal.integrated.shell.linux": "/bin/zsh",
 		"go.gopath": "/go",
